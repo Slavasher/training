@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Khula&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: 'Khula', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cecece;
+}
+
+.start {
+    font-size: 1.5rem;
+    color: red;
+    background: rgb(43, 0, 143);
+    padding: 20px;
+    border-radius: 50%;
+    -webkit-text-stroke: .1em rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    line-height: 1.4;
+    font-size: 4rem;
+    color: rgb(8, 0, 53);
+    -webkit-text-stroke: .01em rgba(0, 0, 0, 0.5);
+    text-shadow: .07em 0 rgb(95, 95, 95);
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    transition: margin 0.5s ease-out;
+    background: linear-gradient(90deg, #11171f 0%, #074281 100%);
+}
+
+.screen.up {
+    margin-top: -100vh;
+}
+
+.time-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.time-list li {
+    margin: 10px;
+}
+
+.time-btn {
+    background-color: transparent;
+    border: 2px solid #C0C0C0;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+}
+
+.time-btn:hover {
+    border: 2px solid #000000;
+    color: #ffffff;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.primary {
+    color: #120079;
+}
+
+.board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(118.38deg, #9ba9b8 -4.6%, #485563 200.44%);
+    box-shadow: -8px -8px 20px #0074f8, 10px 7px 20px #4e80b6;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+    box-shadow: 0 0 10px #000;
+    transition: 4s ease;
+    background: red;
+}
+
+
+.circle:hover {
+    transition-duration: 0s;
+}
